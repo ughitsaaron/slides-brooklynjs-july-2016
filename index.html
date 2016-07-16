@@ -2,12 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
-  <title>Document</title>
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,500' rel='stylesheet' type='text/css'>
+  <title>Interactive Maps as a Guide to Action</title>
   <link rel="stylesheet" href="vendor/reveal.js/css/reveal.css">
-  <link rel="stylesheet" href="vendor/reveal.js/css/theme/solarized.css">
+  <link rel="stylesheet" href="vendor/reveal.js/css/theme/simple.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/zenburn.min.css">
   <style>
+    body {
+      background-color: #B9D8C2;
+      font-family: "News Cycle", Impact, sans-serif;
+    }
+
+    .reveal h1 {
+      color: #8AA1B1;
+      font-weight: 500;
+      font-family: "Raleway", sans-serif;
+    }
+
+    .reveal .alt {
+      background-color: rgba(255, 203, 71, 0.75);
+      color: #8AA1B1;
+      /*text-shadow: 3px 2px 2px white;*/
+    }
+
+    .reveal,
+    .reveal h2,
+    .reveal h3,
+    .reveal p {
+      color: #4A5043;
+      font-family: "News Cycle", Impact, sans-serif;
+    }
+
     .reveal pre,
     .reveal p code {
       border-radius: 7px;
@@ -27,16 +52,272 @@
       padding: .2rem .5rem;
       color: #cc93c1;
     }
+
+    .headline:nth-child(1) { transform: translateY(-50%); }
+    .headline:nth-child(2) { transform: translateY(-150%); }
+    .headline:nth-child(3) { transform: translateY(-250%); }
+    .headline:nth-child(4) { transform: translateY(-550%); }
+    .headline:nth-child(5) { transform: translateY(-650%); }
+    .headline:nth-child(6) { transform: translateY(-700%); }
+    .headline:nth-child(7) { transform: translateY(-850%); }
+    .headline:nth-child(8) { transform: translateY(-1110%); }
+    .headline:nth-child(9) { transform: translateY(-1000%) }
+    .headline:nth-child(10) { transform: translateY(-1400%); }
+    .headline:nth-child(11) { transform: translateY(-1250%); }
+    .headline:nth-child(12) { transform: translateY(-1150%); }
+    .headline:nth-child(13) { transform: translateY(-2000%); }
   </style>
 </head>
-<body class="">
+<body class="wubalubadubdub">
   <div class="reveal">
     <div class="slides">
-      <section data-markdown>
-        # Write A Title
-        ## Here Would Be Nice
+      <section>
+        <h1>Aaron Petcoff</h1>
+        <h3><i>New York</i> magazine</h3>
+        <h3>@ughitsaaron</h3>
+        <aside class="notes" data-markdown>
+          Hi everyone!
+
+          My name is Aaron Petcoff.
+
+          I'm a web developer at _New York_ magazine.
+
+          I'm going to talk tonight about project I worked on called Property Praxis.
+
+          Property Praxis is a critical research project into Detroit's housing market in order to understand and document the impact of speculation.
+        </aside>
       </section>
-      <section data-markdown data-background="http://i.giphy.com/u86hs4MfqHANG.gif">
+      <section data-background-iframe="http://www.propertypraxis.org/">
+
+        <aside class="notes" data-markdown>
+          The project includes an interactive map I built using Javascript that visualizes the results of our research
+        </aside>
+      </section>
+      <section>
+        <h2>Housing in Detroit</h2>
+        <h2>Property Praxis</h2>
+        <h2>Wrap up</h2>
+
+        <aside class="notes" data-markdown>
+          I'm going to start off with giving some background about housing in Detroit, which will provide some context for me to discuss our project and how my work fit in. Then I'll wrap up with some brief concluding remarks.
+        </aside>
+      </section>
+      <section class="headlines">
+        <img src="headline-1.png" alt="" class="headline">
+        <img src="headline-2.png" alt="" class="fragment headline" data-fragment-index="1">
+        <img src="headline-3.png" alt="" class="fragment headline" data-fragment-index="2">
+        <img src="headline-4.png" alt="" class="fragment headline" data-fragment-index="3">
+        <img src="headline-5.png" alt="" class="fragment headline" data-fragment-index="4">
+        <img src="headline-6.png" alt="" class="fragment headline" data-fragment-index="5">
+        <img src="headline-7.png" alt="" class="fragment headline" data-fragment-index="6">
+        <img src="headline-8.png" alt="" class="fragment headline" data-fragment-index="7">
+        <img src="headline-9.png" alt="" class="fragment headline" data-fragment-index="8">
+        <img src="headline-10.png" alt="" class="fragment headline" data-fragment-index="9">
+        <img src="headline-11.png" alt="" class="fragment headline" data-fragment-index="10">
+        <img src="headline-12.png" alt="" class="fragment headline" data-fragment-index="11">
+        <img src="headline-13.png" alt="" class="fragment headline" data-fragment-index="12">
+
+        <aside class="notes" data-markdown>
+          According to the media, Detroit is in the midst of an urban rennaisance.
+
+          This idea is so common and widespread that when I moved here people kept telling me I was "moving in the wrong direction."
+
+          But as probably anyone can guess, this new development is uneven. Plenty of neighborhoods aren't seeing any benefit from this of new investment. In fact, I would suggest that much of the new development comes at the expense of some of Detroit's poorest communities.
+
+          The media representation of Detroit tends to present the city as a sort of crosshatching of economically resurgent neighborhoods consisting of gourmet cocktail bars and abandoned ghost towns left to return to nature.
+        </aside>
+      </section>
+      <section>
+        <h2>As many as 50,000 stray dogs roam the streets and vacant homes of bankrupt Detroit, replacing residents, menacing humans who remain and overwhelming the city’s ability to find them homes or peaceful deaths.</h2>
+
+        <a href="http://www.bloomberg.com/news/articles/2013-08-21/abandoned-dogs-roam-detroit-in-packs-as-humans-dwindle">Bloomberg</a>
+        <aside class="notes" data-markdown>
+          This perspective that the city is being reclaimed by nature is very widespread.
+
+          Consider this article published by Bloomberg a few years ago about the town being overrun by stray dogs.
+
+          It's almost as if they think the city is on the verge of like, land of the lost or something, like dinosaurs are going to start roaming the landscape any day.
+        </aside>
+      </section>
+      <section data-background-image="trex.gif"></section>
+      <section>
+        <h2>As many as 50,000 stray dogs roam the streets and vacant homes of bankrupt Detroit, replacing residents, menacing humans who remain and overwhelming the city’s ability to find them homes or peaceful deaths.</h2>
+
+        <a href="http://www.bloomberg.com/news/articles/2013-08-21/abandoned-dogs-roam-detroit-in-packs-as-humans-dwindle">Bloomberg</a>
+        <br><br><br>
+        <h3>(There aren't…)</h3>
+
+        <aside class="notes" data-markdown>
+          While the Bloomberg article was almost pure fiction, it might appear to many folks that Detroit is being returned to nature.
+
+          This is a common sense conclusion after seeing block after block, filled with abandoned houses choked by overgrown front lawns.
+
+          But common sense can often be misleading.
+        </aside>
+      </section>
+      <section>
+        <h2>"All science would be superfluous if the outward appearance and the essence of things directly coincided."</h2>
+        <div class="fragment" data-fragment-index="1">
+          – <a href="https://www.marxists.org/archive/marx/works/1894-c3/ch48.htm#3">Karl Marx, <i>Capital, Vol. 3</i></a><br>
+          <img src="marx.gif">
+        </div>
+
+        <aside class="notes" data-markdown>
+          Put simply, while it might appear as if Detroit is being reclaimed by nature as a result of widespread abandonment, there are underlying social and economic processes shaping that physical space.
+
+          As someone once wrote, there'd be no need for science if you could simply glance at something to understand it's nature.
+
+          That was Karl Marx.
+        </aside>
+      </section>
+      <section data-background-image="foreclosure.jpg">
+        <aside class="notes" data-markdown>
+          This brings us to Property Praxis and our research into speculation.
+
+          Detroit has the highest rate of evictions and foreclosure than any other major U.S. city.
+        </aside>
+      </section>
+      <section>
+        <h2>Detroit sold 30,000 homes at auction in 2015</h2>
+        <h3>Almost a third of the homes were still occupied</h3>
+        <p class="fragment" data-fragment-index="1">(That's down from over 67,000 homes sold in 2014)</p>
+        <div class="fragment" data-fragment-index="1" style="margin-top: 5rem;">
+          <p><a href="http://www.theatlantic.com/business/archive/2014/10/one-fifth-of-detroits-population-could-lose-their-homes/381694/">One-Fifth of Detroit's Population Could Lose Their Homes</a>, <i>The Atlantic</i></p>
+          <p><a href="http://www.detroitnews.com/story/news/special-reports/2015/07/01/detroit-braces-flood-tax-foreclosures/29589915/">Detroit braces for a flood of tax foreclosures</a>, <i>Detroit News</i></p>
+        </div>
+
+        <aside class="notes" data-markdown>
+          Over 30,000 homes were sold at Detroit's tax foreclosure auction in 2015
+
+          Almost a third of those homes were still occupied at the time of their sale
+
+          That's fewer than half of the 67,000 homes sold at the same auction in 2014
+
+          As the media reports, many investors and new residents are being coming to the city, often attracted by tax breaks and living incentives.
+
+          However, many older Detroit residents face serious hardship.
+
+          Detroit is 83% African American and 38% of its population lives below the poverty line, struggling to pay rising property taxes and risk of losing their homes to foreclosure.
+
+          Homes that are foreclosed on are often bought by speculative investors at tax auctions, sometimes for as little as $500.
+
+          Residents are often evicted. Sometimes they're offered to buy their home back for a wildly inflated price.
+
+          For instance, when one 96-year-old resident was unknowingly foreclosed on in 2012, her home was sold to a speculator for only $1,300. The buyer offered to sell the woman her back for more than $19,000
+
+          Luckily, the woman was able to work out a deal and gain support from the local community and was able to buy her home back for $13,000
+
+          Furthermore, once a house is simply speculated on there's very little incentive to maintain the property. The home rots and crumbles.
+
+          There have been protests against the foreclosure crisis in Detroit, demanding a moratorium on foreclosures and relief for home owners
+        </aside>
+      </section>
+      <section data-background-image="protest-2.jpg" data-background-position="center" data-background-size="contain"></section>
+      <section data-background-image="protest-1.jpg" data-background-position="center" data-background-size="contain"></section>
+      <section>
+        <h1>Property Praxis</h1>
+
+        <aside class="notes" data-markdown>
+          Property Praxis groew out of a desire to better understand this crisis
+        </aside>
+      </section>
+      <section data-background-iframe="http://www.antievictionmap.com/">
+        <aside class="notes" data-markdown>
+          We were heavily inspired by projects like the Anti-Eviction Mapping Project out of San Francisco that maps similar patterns of dispossession resulting from the Bay Area tech boom.
+        </aside>
+      </section>
+      <section>
+        <h1>Who are the speculators?</h1>
+        <ul class="fragment" data-fragment-index="1">
+          <li>Three or more parcels in area in which the owner does not have a taxable address</li>
+          <li>Ownership of a large number of parcels in varying conditions and disuse</li>
+          <li>Single vacant or abandoned property held by an owner with an out­-of-­state or international address</li>
+          <li>A residential property that serves as a taxable address for multiple owners with three or more holdings in the city</li>
+        </ul>
+
+        <aside class="notes" data-markdown>
+          For our project we defined a speculator as any owner who met one or more of these four conditions
+
+          Researchers on this project looked through parcel data made publicly availble by the city.
+
+          Because speculators often hide anonymously behind shell corporations, the researchers tracked down the individual names of owners
+
+          In the end, we wound up with something close to 70,000 parcels.
+        </aside>
+      </section>
+      <section>
+        <h2>One out of every five parcels in Detroit</h2>
+
+        <aside class="notes" data-markdown>
+          That's approximatly one of every five parcels, or 20% of total parcels, in the city.
+        </aside>
+      </section>
+      <section>
+        <h1>I don't know much about geography</h1>
+        <h2 class="fragment" data-fragment-index="1">(But I do know a little about Javascript)</h2>
+
+        <aside class="notes" data-markdown>
+          Folks conducting this research contacted me when they started playing with the idea of visualizing the results of their reseach on the web.
+
+          At the moment I didn't know anything about geography. I still don't, really.
+
+          But I do know a little bit about Javascript and was eagerly waiting an opportunity to work on visualizations with Leaflet.
+        </aside>
+      </section>
+      <section data-background-iframe="http://www.propertypraxis.org/"></section>
+      <section>
+        <h1>Property Praxis</h1>
+        <h3><a href="http://leafletjs.com/">Leaflet</a></h3>
+        <h3><a href="https://carto.com/">Carto</a></h3>
+        <h3><a href="https://emberjs.com/">Ember</a></h3>
+        <h3><a href="https://pages.github.com/">Github Pages</a></h3>
+        <h3><a href="https://data.detroitmi.gov/">Detroit Open Data Portal</a></h3>
+
+        <aside class="notes" data-markdown>
+          I used Ember to manage the front end, handle routing, and grabbing data from Carto which I used to serve up rasterized images of all the parcels in our data.
+
+          Then we use Github Pages to serve up the site, statically. There's no backend code. This also means that the project is very easy to fork and customize with your own data.
+        </aside>
+      </section>
+      <section>
+        <h2>Easy to <a href="https://github.com/alexbhill/project-pip" target="_blank">fork</a> and <a href="https://github.com/alexbhill/project-pip/blob/master/config/environment.js#L19" target="_blank">customize</a></h2>
+        <h2>with your own data</h2>
+
+        <aside class="notes" data-markdown>
+          ((FOLLOW THE LINK TO GITHUB!))
+
+          Since manyc cities make parcel and ownership information available as spreadsheets through local open data portals, it would be relatively easy for someone to could grab the data, run a Python script over it that filters out parcels based on their critera for speculation, upload it to CartoDB and go.
+
+          When I presented this recently at the Allied Media Conference in Detroit, folks from Boston, Baltimore, and Cleveland were similarly interested in understanding the impact of speculation in their own cities and using this project to create their own speculation maps.
+        </aside>
+      </section>
+      <section>
+        <h2>Wrapping up</h2>
+
+        <aside class="notes" data-markdown>
+          We wanted this project to help inform activists, media, and policy makers and the response so far has been exciting.
+
+          I got to hear one reporter of the radio use the map, which was weird.
+
+          I had never considered the importance of maps before and how they work.
+        </aside>
+      </section>
+      <section>
+        <h2>Maps can help us act by reducing complexity and helping us understand how the world around us is shaped</h2>
+
+        <aside class="notes" data-markdown>
+          A map can serve as a guide to action by reducing the complexity around us.
+
+          Maps can reveal truths and releationships often hidden behind that complexity.
+        </aside>
+      </section>
+      <section>
+        <h1>Aaron Petcoff</h1>
+        <h3><i>New York</i> magazine</h3>
+        <h3>@ughitsaaron</h3>
+      </section>
+      <section>
+        <h2><a href="http://aaronpetcoff.me/talks">aaronpetcoff.me/talks</a></h2>
       </section>
     </div>
   </div>
@@ -47,7 +328,9 @@
       controls: true,
       progress: false,
       history: true,
-      center: true,
+      center: false,
+      width: '100%',
+      height: '75%',
 
       transition: Reveal.getQueryHash().transition || 'slide', // default/cube/page/concave/zoom/linear/fade/none
 
